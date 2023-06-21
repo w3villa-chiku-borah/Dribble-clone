@@ -1,0 +1,105 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+ 
+body{
+  font-family: 'Nunito Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+  
+}
+
+ input:focus {
+    border-color: #ff4081 !important;
+    box-shadow: 0 0 0 0.125em rgba(255, 64, 129, 0.25) !important;
+  }
+
+  $custom-pink: #ff4081;
+
+.button.is-custom-pink {
+  background-color: $custom-pink;
+  color: white;
+  border: none;
+}
+  /* Add any additional styling as needed */
+   .width-50{
+    width: 50%
+   }
+
+ @import "bulma";
+
+ .navbar-item img {
+    /* max-height: 1.75rem; */
+    object-fit: contain;
+    /* height: 20px; */
+    width: 50px;
+}
+
+.drag-area {
+  width: 50%;
+  display: flex;
+  // padding: 15px;
+  min-height: 200px;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  border: 2px dashed #bbb;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  font: 21pt bold arial;
+  color: #bbb;
+}
+
+
+
+
+.drop-zone__input {
+  display: none;
+}
+
+.border-none{
+border: none;
+}
+
+
+
+
+.drop-image{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.image-div{
+   height: 450px;
+}
+
+
+
+.shot-full img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.title-and-description h1{
+  font-size: 30px;
+}
+.title-and-description h2{
+  font-size: 26px;
+}
+

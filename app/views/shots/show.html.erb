@@ -1,0 +1,27 @@
+<section class="section section-show">
+<div class="container ">
+  <div class="columns is-centered">
+<div class="shot-full column">
+						 <%= image_tag @shot.user_shot_url unless @shot.user_shot.blank? %>
+	</div>
+  <div class="title-and-description column">
+<p>
+  <h1><strong>Title:</strong><%= @shot.title %></h1>
+
+</p>
+
+<p>
+ <h2> <strong>Description:</strong> <%= @shot.description %> <h2><br>
+
+</p>
+<%= link_to 'Edit', edit_shot_path(@shot), class: "button is-custom-pink" %> 
+<%= link_to 'Back', shots_path ,class: "button is-custom-pink" %>
+<div>
+</div>
+</div>
+
+
+
+
+
+</section>
